@@ -1,0 +1,62 @@
+.tag{
+  color: grey;
+  margin-top: 120px;
+}
+#booklistWrapper{
+  width: 100%;
+}
+#booklistWrapper input{
+  width:25%;
+}
+#booklistWrapper .book{
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  list-style: none;
+  position:relative;
+}
+#booklistWrapper .book .bookdetails{
+    margin-left: 160px;
+}
+#booklistWrapper h3{
+  margin-top:0px;
+}
+#booklistWrapper button{
+  margin-bottom: 5px;
+}
+.container.ng-enter{
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+.container.ng-enter-active{
+  opacity: 1;
+}
+.book.ng-leave{
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity: 1;
+  left:0;
+}
+.book.ng-leave-active{
+  opacity: 0;
+  left:600px;
+}
+.book.ng-enter{
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity: 0;
+  left:600px;
+}
+.book.ng-enter-active{
+  opacity: 1;
+  left:0;
+}
+.nav>li active{
+  background-color: gray;
+}

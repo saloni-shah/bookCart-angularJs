@@ -1,0 +1,20 @@
+<div id="booklistWrapper">
+       	<p>Please click on buy button to buy the book</p>
+        <div>
+          <ul>
+            <li class="book" style="background: white url(http://placehold.it/150x190) no-repeat" ng-repeat="book in cart">
+              <div class="bookdetails clearfix">
+                <h3>{{book.name}}</h3>
+                <p>Price:{{book.price  | currency : '$'}}</p>
+                <ul class="list-unstyled list-block">
+                  <li>Rating: {{book.rating}}</li>
+                  <li>Publisher: {{book.publisher}}</li>
+                  <li>Released Date: {{book.releasedate}}</li>
+                </ul>
+                <p>Details: {{book.details}}</p>
+                <button ng-click="buy(book)">Buy</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+</div>
